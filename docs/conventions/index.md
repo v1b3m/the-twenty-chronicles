@@ -171,6 +171,10 @@ COMPLIANT
 const [email, setEmail] = useState('');
 ```
 
+#### SOME WORDS TO AVOID
+
+- dummy
+
 ### OPTIONAL PROPS
 
 Avoid supplying the default value for an optional prop, as it generally doesn't contribute significantly.
@@ -283,10 +287,6 @@ enum Color {
 }
 let color = Color.Red;
 ```
-
-### SOME WORDS TO AVOID IN VARIABLE NAMES
-
-- dummy
 
 ### BREAKING CHANGES
 
