@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
 Welcome to the *Twenty Chronicles*! Here we'll write about everything learned from actively working on the amazing Twenty Project. 
