@@ -49,7 +49,7 @@ const StyledButton = styled.button`
 
 Avoid using `px` or `rem` values directly within the styled components. The necessary values are generally already defined in the theme, so it's recommended to make use of the theme for these purposes.
 
-Example:
+EXAMPLE
 
 ```tsx
 const StyledButton = styled.button`
@@ -61,7 +61,7 @@ const StyledButton = styled.button`
 
 Refrain from introducing additional colors; instead, utilize the existing palette from the theme. Should there be a situation where the palette does not align, kindly leave a comment so that it can be rectified.
 
-Example:
+EXAMPLE
 
 ```tsx
 const StyledContainer = styled.div`
@@ -84,7 +84,7 @@ const StyledContainer = styled.div`
 
 All styled components should have names starting with `Styled` and should be placed in the same file as the component they are styling.
 
-Example:
+EXAMPLE
 
 ```tsx
 import styled from 'styled-components';
@@ -125,9 +125,9 @@ Limit the utilization of this hook to reduce the frequency of component re-rende
 Furthermore, adhere to a single useEffect hook within each component to maintain code clarity and organization.
 
 
-### NO `FC`
+### NO `FC` / `FunctionComponent`
 
-As per project convention, please refrain from using `FC`. Instead, opt for defining functions with the format `FunctionName`.
+As per project convention, please refrain from using `React.FC` or `React.FunctionComponent`. Instead, opt for defining functions with the format `FunctionName`.
 
 Secondly, avoid utilizing arrow function syntax for defining components. Please adhere to the format of exporting components using the `export function FunctionName() {}` syntax.
 
@@ -153,7 +153,7 @@ function EmailField({ value }: OwnProps) {
 
 ### LOGS (`console.log`)
 
-This should be straightforward: refrain from using `console.log` statements, please.
+This should be straightforward: refrain from pushing `console.log` statements, please.
 
 ### VARIABLE NAMES
 
@@ -180,6 +180,7 @@ const [email, setEmail] = useState('');
 Avoid supplying the default value for an optional prop, as it generally doesn't contribute significantly.
 
 EXAMPLE
+
 Assume, we have the EmailField component defined below
 
 ```tsx
